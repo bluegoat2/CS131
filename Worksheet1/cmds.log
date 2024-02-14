@@ -1,0 +1,56 @@
+    1  cd eclipse
+    2  git clone https://github.com/bluegoat2/CS151.git
+    3  cd CS151
+    4  git status
+    5  git add .
+    6  git commit -m "First commit"
+    7  git push origin main
+    8  cd eclipse
+    9  git clone https://github.com/Keepingshtum/CS151.git
+   10  https://github.com/Keepingshtum/CS151.git
+   11  git clone https://github.com/Keepingshtum/CS151.git
+   12  git clone https://github.com/Keepingshtum/CS151.git
+   13  git clone https://github.com/Keepingshtum/CS151Snippets.git
+   14  exit
+   15  cd eclipse
+   16  git pull https://github.com/MinKhant01/CS151-bitBreakers.git
+   17  git clone https://github.com/MinKhant01/CS151-bitBreakers.git
+   18  cd CS151-bitBreakers
+   19  git pull https://github.com/MinKhant01/CS151-bitBreakers.git
+   20  cd eclipse
+   21  pwd
+   22  cd
+   23  cd ~
+   24  pwd
+   25  cd desktop
+   26  ls -latr; mkdir cs149 ; cd cs149
+   27  git clone https://bluegoat2@bitbucket.org/bencs149/cs149.git
+   28  mkdir WS1
+   29  ls -latr
+   30  cd CS149
+   31  mkdir WS1
+   32  git add .
+   33  ls -latr
+   34  cd WS1
+   35  git add .
+   36  git add *.c
+   37  git commit -m "Pushing C files"
+   38  git branch
+   39  git push -u origin master
+   40  git push -u origin master
+   41  git pull --rebase origin main
+   42  git push -u origin master
+   43  git -u origin main
+   44  git -u origin master
+   45  wget www.github.com
+   46  wget www.github.com
+   47  cd Desktop
+   48  cd CS131
+   49  history > cmds.log
+   50  git add cmds.log
+   51  git commit -m "First Commit"
+   52  cd Desktop
+   53  cd CS131
+   54  mkdir Worksheet1
+   55  cd Worksheet1
+   56  history > cmds.log
