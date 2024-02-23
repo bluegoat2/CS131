@@ -1,0 +1,2 @@
+Count of lines that have the word "Music" in them: 996 Global YouTube Statistics.csv
+Number of times the word "Music" appread in the file:  4174 Global YouTube Statistics.csv
