@@ -1,0 +1,33 @@
+    1  wget www.github.com
+    2  ls
+    3  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20Youtube%20Statistics.csv
+    4   wget https://raw.githubusercontent.com/jyotikahp/DemoRepo       ForCS131/main/Global%20Youtube%20Statistics.csv
+    5  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20Youtube%20Statistics.csv
+    6  sudo apt-get install wget
+    7  wget https://wordpress.org/latest.zip
+    8  how to copy an dpaste in IBM vm
+    9  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+   10  grep Port
+   11  grep Youtube /etc/ssh/sshd_config
+   12  grep Youtube
+   13  grep -E youtube
+   14  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+   15  grep "United States" Global_Youtube_Statistics.csv
+   16  grep "United States" 'Global Youtube Statistics.csv'
+   17  ls
+   18  grep "United States" Global Youtube Statistics.csv
+   19  grep "United States" "Global Youtube Statistics.csv" > US_Youtubers.csv
+   20  grep "United States" 'Global YouTube Statistics.csv'
+   21  grep "Music" 'Global YouTube Statistics.csv'
+   22  wc -1 'Global YouTube Statistics.csv' > counts.txt
+   23  wc -l 'Global YouTube Statistics.csv' > counts.txt
+   24  wc -w 'Global YouTube Statistics.csv' >> counts.txt
+   25  ls
+   26  nano counts.txt
+   27  history > cmds.log
+   28  git clone https://github.com/bluegoat2/CS131.git
+   29  ls
+   30  cd CS131
+   31  mkdir Worksheet2
+   32  cd Worksheet2
+   33  history > cmds.log
