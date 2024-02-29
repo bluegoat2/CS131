@@ -1,0 +1,66 @@
+Question 2
+Command used: echo $SHELL
+Output of the $SHELL: /bin/bash
+
+Question 2
+Command used: echo $HOME
+Output of $Home: /mnt/scratch/SP24_CS131_Jyotika/benjaminsp24
+
+Question 3
+Command used: id
+Output of id: uid=1208(benjaminsp24) gid=1208(benjaminsp24) groups=1208(benjaminsp24),78(S78)
+
+UID: 1208
+We belong to group 1208
+
+Question 4:
+
+My outputs when I was testing ls and ls-l:
+Assignment1.txt
+myDir
+
+
+Question: Can you create files under myDir?
+Answer: No because you no longer make a new file inside of myDir since 
+I no longer have "writing" permissions
+
+You can't cd into it anymore either
+
+Yes you can ls it but not ls -l
+
+
+Question 6:
+Command used: free -m
+Output:
+              total        used        free      shared  buff/cache   available
+Mem:          71367       32542       19708        3515       19117       33851
+Swap:          4119           0        4119
+
+Question 9:
+Command used: cat /etc/os-release
+^we see that os-release contains operating system version info
+Output:
+
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+
+Question 10:
+Command used: ls -l /etc/os-release
+lrwxrwxrwx. 1 root root 22 Apr  6  2022 /etc/os-release -> ..//usr/lib/os-release
+
+Based on this, all users can read, write, and execute

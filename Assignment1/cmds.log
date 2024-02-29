@@ -1,0 +1,47 @@
+    1  cd CS131
+    2  mkdir Assignment1 // Question 1: making directory
+    3  cd Assignment1
+    4  echo $SHELL > Assignment1.txt //Question 2: echoing shell
+    5  ls
+    6  echo $HOME >> Assignment1.txt //Question 2: Echosing home path
+    7  id //Question 3: getting the UID and groups
+    8  id >> Assignment1.txt  //Putting question 3 into output file
+    9  mkdir myDir //Question 4: Making new directory
+   10  ls
+   11  chmod -w myDir //Question 4(Q4): removing write permission 
+   12  ls  //Q4 testing
+   13  ls -l  //Q4 testing
+   14  ls >> Assignment1.txt
+   15  ls -1 >> Assignment1.txt
+   16  cd myDir //Q4 Testing
+   17  ls > test.txt //Q4 Testing
+   18  cd ..
+   19  mkdir myDir2 //Question 5: Making myDir2
+   20  mkdir myDir3 //Question 5: Making myDir3
+   21  touch myDir2/myFile.txt  //Question 6: Creating myFile.txt in myDir2
+   22  cd myDir2
+   23  ls
+   24  cd ..
+   25  mv myDir2/myFile.txt myDir3  //Question 6: Moving files
+   26  ls
+   27  cd myDir2
+   28  ls  //just checking to see if file moved in Question 6
+   29  cd ..
+   30  cd myDir3
+   31  ls
+   32  cd ..
+   33  free -m >> Assignment1.txt //Question 6: use free to get RAM/Memory
+   34  cat /etc/os-release >> Assignment1.txt //Question 9:getting OS version
+   35  ls -l /etc/os-release >> Assignment1.txt//Question 10: permissions
+   36  ls  //The rest from here is just me using nano and double checking
+             my Assignment1.txt file
+   37  nano Assignment1.txt
+   38  echo $SHELL
+   39  echo $HOME
+   40  nano Assignment1.txt
+   41  free -m
+   42  ls -l /etc/os-release
+   43  nano Assignment1.txt
+   44  cat /etc/os-release
+   45  nano Assignment1.txt
+   46  history > cmds.log
