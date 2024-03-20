@@ -1,12 +1,13 @@
+//Annotations are located in Assignment2.txt. I put a command before each question and their associated output in Assignment2.txt
     1  touch Assignment2.txt
-    2  ls
-    3  find /etc -type f > one.txt 2> two.txt
-    4  cat one.txt
-    5  cat one.txt >> Assignment2.txt
-    6  cat two.txt >> Assignment2.txt
-    7  cat Assignment2.txt
-    8  cut -d',' -f20,21 Global\ YouTube\ Statistics.csv | sort | uniq -c | sort -nr | head -3
-    9  cut -d',' -f20,21 Global\ YouTube\ Statistics.csv | sort | uniq -c | sort -nr | head -3 >> Assignment2.txt
+	2  ls
+	3  find /etc -type f > one.txt 2> two.txt
+	4  cat one.txt
+	5  cat one.txt >> Assignment2.txt
+	6  cat two.txt >> Assignment2.txt
+	7  cat Assignment2.txt
+	8  cut -d',' -f20,21 Global\ YouTube\ Statistics.csv | sort | uniq -c | sort -nr | head -3
+	9  cut -d',' -f20,21 Global\ YouTube\ Statistics.csv | sort | uniq -c | sort -nr | head -3 >> Assignment2.txt
    10  cat Assignment2.txt
    11  ps -u $USER
    12  ps -u $USER >> Assignment2.txt
@@ -14,24 +15,5 @@
    14  pgrep systemd
    15  pgrep systemd >> Assignment2.txt
    16  ls
-   17  history >> Assignment2.txt
-   18  cat Assignment2.txt
-   19  git add Assignment2.txt
-   20  ls
-   21  mv Assignment2.txt CS131
-   22  ls
-   23  cd CS131
-   24  ls
-   25  mkdir Assignment2
-   26  mv Assignment2.txt Assignment2
-   27  ls
-   28  git pull
-   29  git add .
-   30  git commit -m "Commit"
-   31  git push
-   32  ps aux
-   33  git pull
-   34  cd CS131
-   35  ls
-   36  cd Assignment2
-   37  history > cmds.log
+   17  ps aux
+   18  history >> Assignment2.txt
