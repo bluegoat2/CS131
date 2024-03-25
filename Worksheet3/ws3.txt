@@ -1,6 +1,14 @@
+//Task 1, sorting by most earnings in the 3 countries
+    1  awk -F ',' '$8 ~ /^(United States|United Kingdom|India)$/ {print $8 "," $16}' 'Global YouTube Statistics.csv' | sort -t ',' -k 2,2nr | awk -F ',' '!seen[$1]++'
+//writing to ws3 file
+    2  awk -F ',' '$8 ~ /^(United States|United Kingdom|India)$/ {print $8 "," $16}' 'Global YouTube Statistics.csv' | sort -t ',' -k 2,2nr | awk -F ',' '!seen[$1]++' >ws3.txt
+   
+Task 1 Output:
 United States,9200000
 India,9000000
 United Kingdom,2000000
+
+Task 2 Output:
 Entertainment,166000000
 Education,162000000
 Sports,96000000
