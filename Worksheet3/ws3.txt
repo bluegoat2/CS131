@@ -8,6 +8,11 @@ United States,9200000
 India,9000000
 United Kingdom,2000000
 
+//Tast 2, sorting by most subscribers in the 3 categories.
+    3  awk -F ',' '$5 ~ /^(Sports|Education|Entertainment)$/ {print $5 "," $3}' 'Global YouTube Statistics.csv' | sort -t ',' -k 2,2nr | awk -F ',' '!seen[$1]++' 
+//writing to ws3 file
+    4  awk -F ',' '$5 ~ /^(Sports|Education|Entertainment)$/ {print $5 "," $3}' 'Global YouTube Statistics.csv' | sort -t ',' -k 2,2nr | awk -F ',' '!seen[$1]++' >> ws3.txt
+
 Task 2 Output:
 Entertainment,166000000
 Education,162000000
