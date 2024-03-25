@@ -1,0 +1,15 @@
+    1  awk -F ',' '$8 ~ /^(United States|United Kingdom|India)$/ {print $8 "," $16}' 'Global YouTube Statistics.csv' | sort -t ',' -k 2,2nr | awk -F ',' '!seen[$1]++'
+    2  awk -F ',' '$8 ~ /^(United States|United Kingdom|India)$/ {print $8 "," $16}' 'Global YouTube Statistics.csv' | sort -t ',' -k 2,2nr | awk -F ',' '!seen[$1]++' >ws3.txt
+    3  awk -F ',' '$5 ~ /^(Sports|Education|Entertainment)$/ {print $5 "," $3}' 'Global YouTube Statistics.csv' | sort -t ',' -k 2,2nr | awk -F ',' '!seen[$1]++' 
+    4  awk -F ',' '$5 ~ /^(Sports|Education|Entertainment)$/ {print $5 "," $3}' 'Global YouTube Statistics.csv' | sort -t ',' -k 2,2nr | awk -F ',' '!seen[$1]++' >> ws3.txt
+    5  ls
+    6  mv ws3.txt CS131
+    7  ls
+    8  cd CS131
+    9  ls
+   10  mkdir Worksheet3
+   11  mv ws3.txt Worksheet3
+   12  ls
+   13  cd Worksheet3
+   14  ls
+   15  history > cmds.log

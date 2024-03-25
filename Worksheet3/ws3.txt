@@ -1,0 +1,6 @@
+United States,9200000
+India,9000000
+United Kingdom,2000000
+Entertainment,166000000
+Education,162000000
+Sports,96000000
