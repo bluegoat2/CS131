@@ -1,0 +1,34 @@
+Task 1:
+wc -l last.fake
+grep 'sp24' last.fake > lastsp24.fake
+wc -l lastsp24.fake
+
+
+Task 2:
+echo "The list of people who worked on Sunday are:" > Assignment3.txt
+grep "Sun " lastsp24.fake | awk '{print $1}' | sort | uniq >> Assignment3.txt
+echo "Kudos to these people for putting in the work" >> Assignment3.txt
+
+
+Task 3:
+echo "Night Owls List:" >> Assignment3.txt
+awk '{split($7, a,":"); split($9, b, ":"); if (a[1]>=23 && b[1]<=4) print $1}' lastsp24.fake | sort | uniq >> Assignment3.txt
+echo "Night Owls are dope. Please ensure you get enough sleep though." >> Assignment3.txt
+
+
+Task 4:
+echo "Early Birds List:" >> Assignment3.txt
+awk '{split($7, a,":"); split($9, b, ":"); if (a[1]>=5 && b[1]<=9) print $1}' lastsp24.fake | sort | uniq >> Assignment3.txt
+echo "Early Birds are dope. Please ensure you get enough sleep though." >> Assignment3.txt
+
+
+Task 5:
+awk '/^t/{print $1}' lastsp24.fake | uniq >> Assignment3.txt
+
+
+Task 6:
+awk '{split($1, a,":"); if ($1 ~ /^a/ && a[3] % 2 == 0 ) print a[1]}' passwd.fake | sort | uniq >> Assignment3.txt
+
+
+Task 7:
+sed 's/[[:alnum:][:space:]]//g' passwd.fake | sort -u >> Assignment3.txt
