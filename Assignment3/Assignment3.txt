@@ -1,5 +1,20 @@
+Task 1
+Commands used to solve task 1:
+wc -l last.fake
+grep 'sp24' last.fake > lastsp24.fake
+wc -l lastsp24.fake
+
+Output of task 1:
 507 last.fake
 478 lastsp24.fake
+
+Task 2:
+Commands used to solve task 2:
+echo "The list of people who worked on Sunday are:" > Assignment3.txt
+grep "Sun " lastsp24.fake | awk '{print $1}' | sort | uniq >> Assignment3.txt
+echo "Kudos to these people for putting in the work" >> Assignment3.txt
+
+Output of Task 2:
 The list of people who worked on Sunday are:
 aayushsp24
 akashsp24
@@ -14,6 +29,15 @@ michellesp24
 swansp24
 xuebosp24
 Kudos to these people for putting in the work
+
+Task 3:
+
+Commands used to solve task 3:
+echo "Night Owls List:" >> Assignment3.txt
+awk '{split($7, a,":"); split($9, b, ":"); if (a[1]>=23 && b[1]<=4) print $1}' lastsp24.fake | sort | uniq >> Assignment3.txt
+echo "Night Owls are dope. Please ensure you get enough sleep though." >> Assignment3.txt
+
+Output of task 3:
 Night Owls List:
 ajaysp24
 brandonsp24
@@ -38,6 +62,14 @@ vaikuntamsp24
 xiaokesp24
 yelinsp24
 Night Owls are dope. Please ensure you get enough sleep though.
+
+Task 4
+Commands used to solve task 4:
+echo "Early Birds List:" >> Assignment3.txt
+awk '{split($7, a,":"); split($9, b, ":"); if (a[1]>=5 && b[1]<=9) print $1}' lastsp24.fake | sort | uniq >> Assignment3.txt
+echo "Early Birds are dope. Please ensure you get enough sleep though." >> Assignment3.txt
+
+Output of task 4:
 Early Birds List
 aayushsp24
 ajaysp24
@@ -76,44 +108,27 @@ vaikuntamsp24
 xiaokesp24
 yelinsp24
 Early Birds are dope. Please ensure you get enough sleep though.
-tylersp24
-tylersp24
-tylersp24
-tylersp24
-tylersp24
-tylersp24
-tylersp24
-tylermsp24
-tylermsp24
-tylermsp24
-tylermsp24
-tylermsp24
-tylermsp24
-tylermsp24
-tylermsp24
-taliasp24
-taliasp24
-taliasp24
-taliasp24
-taliasp24
-taliasp24
-taliasp24
-taliasp24
-taliasp24
-taliasp24
+
+Task 5:
+Commands used to solve task 5: awk '/^t/{print $1}' lastsp24.fake | uniq >> Assignment3.txt
+
+Output of task 5:
 tylersp24
 tylermsp24
-tylermsp24
+taliasp24
+tylersp24
 tylermsp24
 tylersp24
 tanishasp24
 tylersp24
-tylersp24
-tylersp24
 tylermsp24
 tylersp24
-tylersp24
-awk '{split(, a,:); if ( ~ /^a/ && a[3] % 2 == 0 ) print a[1]}' passwd.fake | sort | uniq
+
+Task 6:
+Commands used to solve task 6:
+awk '{split($1, a,":"); if ($1 ~ /^a/ && a[3] % 2 == 0 ) print a[1]}' passwd.fake | sort | uniq >> Assignment3.txt
+
+Output of task 6:
 aayushsp24
 acesp24
 ajay23fa
@@ -128,6 +143,11 @@ apple23fa
 areebah23fa
 ashish
 ayesp24
+
+Task 7:
+Command used to solve task 7:sed 's/[[:alnum:][:space:]]//g' passwd.fake | sort -u >> Assignment3.txt
+
+Output of task 7:
 -::::-:/://
 -:::::///-://
 -:::::///__/-://
